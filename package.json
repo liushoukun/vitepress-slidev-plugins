@@ -1,0 +1,28 @@
+{
+  "name": "vitepress-slidev-plugins",
+  "version": "0.1.0",
+  "description": "VitePress + Slidev 插件集合 monorepo",
+  "type": "module",
+  "main": "./index.js",
+  "module": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": "./index.js"
+  },
+  "packageManager": "pnpm@10.17.1",
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm -r --parallel dev",
+    "lint": "pnpm -r lint",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "^2.0.0-alpha.12",
+    "vitepress-plugin-legend": "^2.0.0"
+  },
+  "dependencies": {
+    "vitepress-slidev-preview": "workspace:*"
+  }
+}

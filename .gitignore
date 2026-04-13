@@ -1,0 +1,26 @@
+# dependencies
+node_modules/
+
+# logs
+*.log
+pnpm-debug.log*
+
+# build artifacts
+dist/
+coverage/
+.turbo/
+
+# vitepress
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+
+# env
+.env
+.env.*
+!.env.example
+
+# editor and os files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
